@@ -1,0 +1,44 @@
+*{
+    font-family: Arial;
+}
+
+body{
+    position: relative;
+    overflow-x: hidden;
+}
+
+#header{
+    position: relative;
+}
+
+#home{
+    position: relative;
+    top: 100px;
+    height: 1000px;
+}
+
+.home-bg{
+    position: absolute;
+    right: -200px;
+    top: 150px;
+}
+
+.home-img{
+    transform: scale(0.9);
+    transform: rotate(270deg);
+    /*opacity: 50%;*/
+}
+
+#customer{
+    position: relative;
+    height: 600px;
+}
+
+#item{
+    position: relative;
+    height: 600px;
+}
+
+#order{
+    position: relative;
+}

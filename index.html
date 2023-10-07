@@ -6,42 +6,313 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
 </head>
 <body>
 
 <!-- Header -->
 <div class="header">
     <header>
-        <img src="assets/img/mvr.png" alt="logo">
-        <nav>
-            <ul class="navbar-nav ml-auto" id="main-menu">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#customer">Customer</a></li>
-                <li class="nav-item"><a class="nav-link" href="#item">Item</a></li>
-                <li class="nav-item"><a class="nav-link" href="#order">Order</a></li>
-                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">POS System</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#customer">Customer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#item">Item</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#order">Order</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 </div>
 
 <!-- Home -->
-<div id="home"></div>
+<section id="home">
+<!--    <div class="home-bg">-->
+<!--        <img src="assets/images/fruits-and-vegetables-rainbow.webp" alt="home-bg" class="home-img">-->
+<!--    </div>-->
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <div class="card mb-3" style="max-width: 540px; height: 150px; width: 300px">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <i class="fa-solid fa-users fa-bounce" style="color: #11d5ee; height: 50px; top: 47px; left: 10px; position: relative"></i>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h1></h1>
+                                <h5 class="card-title">Customers</h5>
+                                <p class="card-text"></p>
+                                <p class="card-text"><small class="text-body-secondary">3000</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3" style="max-width: 540px; height: 150px; width: 300px">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <i class="fa-solid fa-boxes-stacked fa-bounce" style="color: #11d5ee; height: 50px; top: 47px; left: 10px; position: relative"></i>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h1></h1>
+                                <h5 class="card-title">Items</h5>
+                                <p class="card-text"></p>
+                                <p class="card-text"><small class="text-body-secondary">3000</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3" style="max-width: 540px; height: 150px; width: 300px">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <i class="fa-solid fa-basket-shopping fa-bounce" style="color: #11d5ee; height: 50px; top: 47px; left: 10px; position: relative"></i>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h1></h1>
+                                <h5 class="card-title">Orders</h5>
+                                <p class="card-text"></p>
+                                <p class="card-text"><small class="text-body-secondary">3000</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
 
 <!-- Customer -->
-<div id="customer"></div>
+<section id="customer">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form>
+                    <div class="text-center">
+                        <h1>Customer Details</h1>
+                    </div>
+                    <div class="mb-3">
+                        <label for="student-id" class="form-label">Customer Id</label>
+                        <input type="number" class="form-control" id="student-id" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Customer Name</label>
+                        <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="address">Customer Address</label>
+                        <textarea class="form-control" placeholder="Enter Your Address" id="address"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="salary" class="form-label">Customer Salary</label>
+                        <input type="text" class="form-control" id="salary" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mt-4">
+                        <button type="submit" class="btn btn-outline-success">Submit</button>
+                        <button type="button" class="btn btn-outline-primary">Update</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                        <button type="reset" class="btn btn-outline-secondary">Reset</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col">
+                <div class="table-responsive">
+                    <table class="table align-middle">
+                        <thead>
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Salary</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>C001</td>
+                            <td>Vimukthi</td>
+                            <td>Colombo</td>
+                            <td>10000000</td>
+                        </tr>
+                        <tr>
+                            <td>C002</td>
+                            <td>Maneesha</td>
+                            <td>Kaluthara</td>
+                            <td>5000000</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Item -->
-<div id="item"></div>
+<div id="item">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form>
+                    <div class="text-center">
+                        <h1>Item Details</h1>
+                    </div>
+                    <div class="mb-3">
+                        <label for="code" class="form-label">Item Code</label>
+                        <input type="number" class="form-control" id="code" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="i-name" class="form-label">Item Name</label>
+                        <input type="text" class="form-control" id="i-name" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="price" class="form-label">Item Price</label>
+                        <input type="text" class="form-control" id="price" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="quantity" class="form-label">Item Quantity</label>
+                        <input type="text" class="form-control" id="quantity" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mt-4">
+                        <button type="submit" class="btn btn-outline-success">Submit</button>
+                        <button type="button" class="btn btn-outline-primary">Update</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                        <button type="reset" class="btn btn-outline-secondary">Reset</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col">
+                <div class="table-responsive">
+                    <table class="table align-middle">
+                        <thead>
+                        <tr>
+                            <th scope="col">Code</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>I001</td>
+                            <td>White-rice</td>
+                            <td>270</td>
+                            <td>10000</td>
+                        </tr>
+                        <tr>
+                            <td>I002</td>
+                            <td>Sugar</td>
+                            <td>140</td>
+                            <td>5000</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Order -->
-<div id="order"></div>
+<div id="order">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form>
+                    <div class="text-center">
+                        <h1>Order Details</h1>
+                    </div>
+                    <div class="mb-3">
+                        <label for="code" class="form-label">Item Code</label>
+                        <input type="number" class="form-control" id="code" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="i-name" class="form-label">Item Name</label>
+                        <input type="text" class="form-control" id="i-name" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="price" class="form-label">Item Price</label>
+                        <input type="text" class="form-control" id="price" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="quantity" class="form-label">Item Quantity</label>
+                        <input type="text" class="form-control" id="quantity" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mt-4">
+                        <button type="submit" class="btn btn-outline-success">Submit</button>
+                        <button type="button" class="btn btn-outline-primary">Update</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                        <button type="reset" class="btn btn-outline-secondary">Reset</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col">
+                <div class="table-responsive">
+                    <table class="table align-middle">
+                        <thead>
+                        <tr>
+                            <th scope="col">Code</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>I001</td>
+                            <td>White-rice</td>
+                            <td>270</td>
+                            <td>10000</td>
+                        </tr>
+                        <tr>
+                            <td>I002</td>
+                            <td>Sugar</td>
+                            <td>140</td>
+                            <td>5000</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Gallery -->
 <div id="gallery"></div>
 
 <!-- Contact -->
+<div id="contact"></div>
 
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/fontawesome/js/all.min.js"></script>
