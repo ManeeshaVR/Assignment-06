@@ -77,10 +77,13 @@ $('#order_details_nav').on('click', () => {
     $('#order_details_nav').addClass('active-page');
 });
 
+
+const count = $('.count');
+
 export function setCounts(){
     count.eq(0).text(customer_db.length);
     count.eq(1).text(item_db.length);
     count.eq(2).text(order_db.length);
 }
 //
-// setCounts();
+setCounts();
