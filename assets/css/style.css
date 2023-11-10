@@ -84,7 +84,6 @@ p{
 
 .card{
     height: 180px;
-    width: 300px;
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.03);
     border: none;
     border-radius: 30px;
@@ -108,39 +107,6 @@ p{
     top: 50%;
     color: var(--font-grey);
     font-size: 50px;
-}
-
-.link-page{
-    text-decoration: none;
-    color: #00b4d8;
-    cursor: pointer;
-}
-
-.chart-card{
-    height: fit-content;
-    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.03);
-    border: none;
-    border-radius: 30px;
-    padding: 25px;
-    background-color: #ffffff;
-}
-
-.chart-title{
-    font-size: 24px;
-    color: var(--font-color);
-}
-
-.chart-card div{
-    width: 550px;
-}
-
-.image-container{
-    position: relative;
-}
-
-.image-class{
-    width: 368px;
-    height: 332px;
 }
 
 .header{
@@ -242,32 +208,13 @@ td, th[scope = 'row']{
     border-radius: 10px;
 }
 
-@media all and (max-width: 992px) {
-    .chart-card div{
-        width: 300px;
-    }
-}
 
 @media all and (max-width: 768px) {
     section{
         height: 150vh;
     }
 
-    .chart-card div{
-        width: 450px;
-    }
-
-    .image-class{
-        display: none;
-    }
-
     .active-page:after{
         width: 0;
-    }
-}
-
-@media all and (max-width: 576px) {
-    .chart-card{
-        display: none;
     }
 }
